@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "7a2f3976-4311-4267-b85c-af7acccb1e4e",
+		"name": "Contact-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28327341"
+	},
+	"item": [
+		{
+			"name": "Contacts",
+			"item": [
+				{
+					"name": "Get all contacts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoib21rYXIiLCJlbWFpbCI6Im9ta2FyQGdtYWlsLmNvbSIsImlkIjoiNjRkMjJiNTYwODEwZTNjNDI0MWNkYTY4In0sImlhdCI6MTY5MTQ5NTI2MywiZXhwIjoxNjkxNDk2MTYzfQ.zs6LmTATEr1UxINkEix4RdO85ZOnt2c3C0YcF0BuMiI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/contacts"
+					},
+					"response": []
+				},
+				{
+					"name": "Add contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoib21rYXIiLCJlbWFpbCI6Im9ta2FyQGdtYWlsLmNvbSIsImlkIjoiNjRkMjJiNTYwODEwZTNjNDI0MWNkYTY4In0sImlhdCI6MTY5MTQ5NTI2MywiZXhwIjoxNjkxNDk2MTYzfQ.zs6LmTATEr1UxINkEix4RdO85ZOnt2c3C0YcF0BuMiI"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ram\",\r\n    \"email\": \"ram@gmail.com\",\r\n    \"phone\": \"12324567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/contacts"
+					},
+					"response": []
+				},
+				{
+					"name": "Get contact",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoib21rYXIiLCJlbWFpbCI6Im9ta2FyQGdtYWlsLmNvbSIsImlkIjoiNjRkMjJiNTYwODEwZTNjNDI0MWNkYTY4In0sImlhdCI6MTY5MTQ5NTI2MywiZXhwIjoxNjkxNDk2MTYzfQ.zs6LmTATEr1UxINkEix4RdO85ZOnt2c3C0YcF0BuMiI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ram\",\r\n    \"email\": \"ram@gmail.com\",\r\n    \"phone\": \"12324567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/contacts/64d22d1f5a4be0ea34562fef"
+					},
+					"response": []
+				},
+				{
+					"name": "Update contact",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoib21rYXIiLCJlbWFpbCI6Im9ta2FyQGdtYWlsLmNvbSIsImlkIjoiNjRkMjJiNTYwODEwZTNjNDI0MWNkYTY4In0sImlhdCI6MTY5MTQ5NTI2MywiZXhwIjoxNjkxNDk2MTYzfQ.zs6LmTATEr1UxINkEix4RdO85ZOnt2c3C0YcF0BuMiI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ram\",\r\n    \"email\": \"ram@gmail.com\",\r\n    \"phone\": \"12324567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/contacts/64d22d1f5a4be0ea34562fef"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete contact",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoib21rYXIiLCJlbWFpbCI6Im9ta2FyQGdtYWlsLmNvbSIsImlkIjoiNjRkMjJiNTYwODEwZTNjNDI0MWNkYTY4In0sImlhdCI6MTY5MTQ5NTI2MywiZXhwIjoxNjkxNDk2MTYzfQ.zs6LmTATEr1UxINkEix4RdO85ZOnt2c3C0YcF0BuMiI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ram\",\r\n    \"email\": \"ram@gmail.com\",\r\n    \"phone\": \"12324567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/contacts/64d22d1f5a4be0ea34562fef"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"omkar\",\r\n    \"email\": \"omkar@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/users/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"omkar@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/users/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Current user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoib21rYXIiLCJlbWFpbCI6Im9ta2FyQGdtYWlsLmNvbSIsImlkIjoiNjRkMjJiNTYwODEwZTNjNDI0MWNkYTY4In0sImlhdCI6MTY5MTQ5NTI2MywiZXhwIjoxNjkxNDk2MTYzfQ.zs6LmTATEr1UxINkEix4RdO85ZOnt2c3C0YcF0BuMiI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"omkar@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/users/current"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
